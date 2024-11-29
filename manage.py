@@ -4,9 +4,14 @@ import os
 import sys
 
 
+
+
 def main():
     """Run administrative tasks."""
+    from django.core.wsgi import get_wsgi_application
+
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'skylineFacade.settings')
+    app = get_wsgi_application()
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
