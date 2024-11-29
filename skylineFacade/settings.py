@@ -84,8 +84,8 @@ TEMPLATES = [
 ]
 
 # WSGI_APPLICATION = 'skylineFacade.wsgi.application'
-WSGI_APPLICATION = 'api.wsgi.app'
-
+# WSGI_APPLICATION = 'api.wsgi.app'
+WSGI_APPLICATION ='wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
