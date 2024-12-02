@@ -65,12 +65,12 @@ class ProjectImage(models.Model):
     def __str__(self):
         return f"Image for {self.project.title}"
     
-# class Health_safety(models.Model):
-#     title = models.CharField(max_length=100,null=True,blank=True)
-#     description = HTMLField(null=True)    
+class Health_safety(models.Model):
+    title = models.CharField(max_length=100,null=True,blank=True)
+    description = HTMLField(null=True)    
     
-#     def __str__(self):
-#         return self.title
+    def __str__(self):
+        return self.title
     
 class Contactus(models.Model):
     name = models.CharField(max_length=100,blank=True,null=True)
