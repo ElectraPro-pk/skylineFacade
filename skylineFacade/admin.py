@@ -29,7 +29,7 @@ class BlogPostAdmin(admin.ModelAdmin):
     exclude = ('slug',)
 
 admin.site.register(BlogPost, BlogPostAdmin)
-admin.site.register(Health_safety)
+# admin.site.register(Health_safety)
 admin.site.register(Contactus)
 
 
