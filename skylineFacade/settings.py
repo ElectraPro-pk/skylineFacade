@@ -24,7 +24,7 @@ DATA_UPLOAD_MAX_MEMORY_SIZE = 100485760
 SECRET_KEY = 'django-insecure-qd91_r!^j(ui$-6*hjpq0qzbn4l27$9su(ra+4b7i8_7b8x)m5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -92,8 +92,16 @@ WSGI_APPLICATION ='skylineFacade.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # # 'NAME': BASE_DIR / 'db.sqlite3',
+        # 'NAME': os.path.join('/tmp', 'db.sqlite3')
+        
+         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'skylinefacade',
+        'USER': 'admin',
+        'PASSWORD': 'Admin@1123',
+        'HOST': '167.71.58.171',
+        'PORT': '5432',
         
     }
 }
